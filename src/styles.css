@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+.App {
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  background-image: linear-gradient(black, black, #04212b, #1b698c);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.Header {
+  width: 90%;
+  max-width: 500px;
+  height: 25%;
+}
+
+.trap {
+  margin-top: 0px;
+  width: 100vw;
+  max-width: 400px;
+}
+.center {
+  height: 300px;
+  margin-bottom: 0px;
+  width: 100vw;
+  max-width: 400px;
+  overflow: hidden;
+  background-image: linear-gradient(black, black, #04212b);
+}
+.slimer {
+  position: relative;
+  width: 60%;
+}
+.start {
+  margin-top: 0px;
+  border: 8px inset;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100px;
+  width: 100vw;
+  max-width: 384px;
+  background-repeat: none;
+  background-size: cover;
+}
+.start-button {
+  width: 60%;
+  height: 50%;
+  border: 3px inset;
+  background-color: crimson;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.start-button:hover {
+  background-color: red;
+}
+.start-button:active {
+  transform: scale(95%);
+}
+@keyframes moveDown {
+  0% {
+    top: 0;
+    visibility: visible;
+  }
+  100% {
+    transform: rotateY(1080deg);
+    top: 100%;
+    visibility: hidden;
+  }
+}
